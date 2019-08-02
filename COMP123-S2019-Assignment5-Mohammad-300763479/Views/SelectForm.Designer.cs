@@ -1,4 +1,4 @@
-﻿namespace COMP123_S2019_Assignment5_Mohammad_300763479
+﻿namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
     partial class SelectForm
     {

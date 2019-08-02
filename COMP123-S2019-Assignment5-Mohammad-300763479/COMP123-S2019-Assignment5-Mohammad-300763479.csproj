@@ -62,15 +62,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SelectForm.cs">
+    <Compile Include="Views\SelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelectForm.Designer.cs">
+    <Compile Include="Views\SelectForm.Designer.cs">
       <DependentUpon>SelectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SelectForm.resx">
+    <EmbeddedResource Include="Views\SelectForm.resx">
       <DependentUpon>SelectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
