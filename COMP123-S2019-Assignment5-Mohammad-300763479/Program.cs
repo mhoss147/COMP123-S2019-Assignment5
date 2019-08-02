@@ -8,10 +8,17 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Assignment5_Mohammad_300763479
 {
-   public static class Program
+    public static class Program
     {
-       public static Product product;
+        // static members
+        public static SplashForm splashForm;
+        public static StartForm startForm;
         public static SelectForm selectForm;
+        public static ProductInfoForm productInfoForm;
+        public static OrderForm orderForm;
+        public static AboutForm aboutForm;
+
+        //public static Product product;
 
         /// <summary>
         /// The main entry point for the application.
@@ -22,10 +29,16 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            // Instantiate all forms here
+            splashForm = new SplashForm();
+            startForm = new StartForm();
             selectForm = new SelectForm();
-            product = new Product();
+            productInfoForm = new ProductInfoForm();
+            orderForm = new OrderForm();
+            aboutForm = new AboutForm();
+            //product = new Product();
 
-            Application.Run(selectForm);
+            Application.Run(startForm);
 
         }
     }
