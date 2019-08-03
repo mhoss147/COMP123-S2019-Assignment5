@@ -18,7 +18,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
         public static OrderForm orderForm;
         public static AboutForm aboutForm;
 
-        //public static Product product;
+        public static Product product;
 
         /// <summary>
         /// The main entry point for the application.
@@ -36,9 +36,9 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             aboutForm = new AboutForm();
-            //product = new Product();
+            product = new Product();
 
-            Application.Run(startForm);
+            Application.Run(orderForm);
 
         }
     }
