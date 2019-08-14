@@ -20,7 +20,8 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
+            ProductPrintForm.Print();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

@@ -38,7 +38,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
             aboutForm = new AboutForm();
             product = new Product();
 
-            Application.Run(orderForm);
+            Application.Run(splashForm);
 
         }
     }

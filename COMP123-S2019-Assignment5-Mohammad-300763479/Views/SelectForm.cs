@@ -25,10 +25,10 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
             //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            using (var db = new ProductModel())
+            using(var db = new ProductModel())
             {
                 db.products.Load();
-                productModelBindingSource.DataSource = db.products.Local.ToBindingList();
+                productBindingSource.DataSource = db.products.Local.ToBindingList();
             }
         }
 
