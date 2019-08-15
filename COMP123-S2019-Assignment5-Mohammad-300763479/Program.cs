@@ -10,37 +10,6 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
 {
     public static class Program
     {
-        //// static members
-        //public static SplashForm splashForm;
-        //public static StartForm startForm;
-        //public static SelectForm selectForm;
-        //public static ProductInfoForm productInfoForm;
-        //public static OrderForm orderForm;
-        //public static AboutForm aboutForm;
-
-        //public static Product product;
-
-        ///// <summary>
-        ///// The main entry point for the application.
-        ///// </summary>
-        //[STAThread]
-        //static void Main()
-        //{
-        //    Application.EnableVisualStyles();
-        //    Application.SetCompatibleTextRenderingDefault(false);
-
-        //    // Instantiate all forms here
-        //    aboutForm = new AboutForm();
-        //    splashForm = new SplashForm();
-        //    startForm = new StartForm();
-        //    selectForm = new SelectForm();
-        //    productInfoForm = new ProductInfoForm();
-        //    orderForm = new OrderForm();
-        //    product = new Product();
-
-        //    Application.Run(splashForm);
-
-
         public static Product product;
 
         //Using a Dictionary and an ENUM to handle Form Names
@@ -66,7 +35,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
             //creating a product object
             product = new Product();
 
-            Application.Run(Forms[FormName.SPLASH_FORM]);
+            Application.Run(Forms[FormName.SELECT_FORM]);
         }
 
     }

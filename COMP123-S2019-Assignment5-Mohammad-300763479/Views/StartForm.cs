@@ -34,10 +34,8 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         private void OpenSavedOrderButton_Click(object sender, EventArgs e)
         {
             var _productInfoForm = Program.Forms[FormName.PRODUCT_INFO_FORM] as ProductInfoForm;
-
             _productInfoForm.Show();
             _productInfoForm.OpenFileDialog();
-
             this.Hide();
         }
         /// <summary>
