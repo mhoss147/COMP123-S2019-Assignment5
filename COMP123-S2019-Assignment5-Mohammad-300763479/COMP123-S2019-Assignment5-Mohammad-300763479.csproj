@@ -64,6 +64,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormName.cs" />
     <Compile Include="Views\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,9 +120,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\SplashForm.resx">
       <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DollarComputersDataSet.xsc">
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
@@ -152,6 +157,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DollarComp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DollarComputer.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
