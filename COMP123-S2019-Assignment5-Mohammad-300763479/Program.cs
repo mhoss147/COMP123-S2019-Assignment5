@@ -6,9 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * Student Name: Mohammad S Hossain
+ * App name: Dollar Computers
+ * Author's Name: Mohammad S Hossain
  * Student ID: 300763479
- * Description: This is the Main Program class
+ * App Creation Date: 02 August, 2019
+ * Description: This is the Main Program class for application
  */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479
 {

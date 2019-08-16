@@ -1,6 +1,8 @@
 /*
- * Student Name: Mohammad S Hossain
+ * App name: Dollar Computers
+ * Author's Name: Mohammad S Hossain
  * Student ID: 300763479
+ * App Creation Date: 02 August, 2019
  * Description: This is the Product model class
  */
 

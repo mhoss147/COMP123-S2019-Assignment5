@@ -1,7 +1,9 @@
 
 /*
- * Student Name: Mohammad S Hossain
+ * App name: Dollar Computers
+ * Author's Name: Mohammad S Hossain
  * Student ID: 300763479
+ * App Creation Date: 02 August, 2019
  * Description: This is the Product class
  */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Data
@@ -12,7 +14,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
     /// <summary>
-    /// Enum for product fields
+    /// This is the Enum for product fields
     /// </summary>
     enum ProductFields
     {

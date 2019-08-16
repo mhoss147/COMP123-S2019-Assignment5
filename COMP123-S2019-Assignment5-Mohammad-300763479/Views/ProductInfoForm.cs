@@ -9,9 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * Student Name: Mohammad S Hossain
+ * App name: Dollar Computers
+ * Author's Name: Mohammad S Hossain
  * Student ID: 300763479
- * Description: This is the ProductInfo form
+ * App Creation Date: 02 August, 2019
+ * Description: This is the ProductInfo form for application
  */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
@@ -28,7 +30,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// <param name="e"></param>
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
-            //Disable Next button until form filled
+            //This disable the Next button until user select any row
             NextButton.Enabled = false;
         }
         /// <summary>
@@ -36,7 +38,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// </summary>
         public void PopulateProductInformation()
         {
-            //Fill up fields only when a product (Computer) is selected
+            //This fill up fields when a product (Computer) is selected
             if (Program.product.productID != 0)
             {
                 ProductIDDataLabel.Text = Program.product.productID.ToString();
@@ -56,7 +58,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                 CPUSpeedDataLabel.Text = Program.product.CPU_speed;
                 WebCamDataLabel.Text = Program.product.webcam;
 
-                //Enabble Next button after form filled
+                //This is to enabble Next button after form filled
                 NextButton.Enabled = true;
             }
         }
@@ -115,13 +117,13 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// </summary>
         public void OpenFileDialog()
         {
-            //Configure the file dialog
+            //This is to configure the file dialog
             SelectOrderOpenFileDialog.FileName = "Product";
             SelectOrderOpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
             SelectOrderOpenFileDialog.Filter = "Text documents (*.txt)|*.txt| All Files(*.*)|*.*";
             SelectOrderOpenFileDialog.DefaultExt = ".txt";
 
-            //Open file dialog
+            //This is to open file dialog
             var _result = SelectOrderOpenFileDialog.ShowDialog();
             if (_result != DialogResult.Cancel)
             {
@@ -130,7 +132,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                     using (StreamReader inputStream = new StreamReader(
                         File.Open(SelectOrderOpenFileDialog.FileName, FileMode.Open)))
                     {
-                        //Read stuff from the file into the Product object
+                        //This is to read data from the file into the Product object
                         Program.product.productID = short.Parse(inputStream.ReadLine());
                         Program.product.condition = inputStream.ReadLine();
                         Program.product.cost = decimal.Parse(inputStream.ReadLine());
@@ -148,7 +150,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                         Program.product.CPU_speed = inputStream.ReadLine();
                         Program.product.webcam = inputStream.ReadLine();
 
-                        //Cleanup
+                        //This is for cleaning up
                         inputStream.Close();
                         inputStream.Dispose();
                     }
@@ -168,23 +170,23 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// <param name="e"></param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Configure the file dialog
+            //This is to Configure the file dialog
             SelectOrderSaveFileDialog.FileName = "Product";
             SelectOrderSaveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
             SelectOrderSaveFileDialog.Filter = "Text documents (*.txt)|*.txt| All Files(*.*)|*.*";
             SelectOrderSaveFileDialog.DefaultExt = ".txt";
 
-            //Open file dialog
+            //This is to Open file dialog
             var _result = SelectOrderSaveFileDialog.ShowDialog();
             if (_result != DialogResult.Cancel)
             {
                 try
                 {
-                    //Open stream to write
+                    //This is to Open stream to write
                     using (StreamWriter outputStream = new StreamWriter(
                         File.Open(SelectOrderSaveFileDialog.FileName, FileMode.Create)))
                     {
-                        //Write stuff to the file
+                        //This is to Write data to the file
                         outputStream.WriteLine(Program.product.productID.ToString());
                         outputStream.WriteLine(Program.product.condition);
                         outputStream.WriteLine(Program.product.cost);
@@ -202,7 +204,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                         outputStream.WriteLine(Program.product.CPU_speed);
                         outputStream.WriteLine(Program.product.webcam);
 
-                        //Cleanup
+                        //This is to Cleanup
                         outputStream.Close();
                         outputStream.Dispose();
                     }

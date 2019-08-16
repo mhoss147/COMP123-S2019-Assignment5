@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * Student Name: Mohammad S Hossain
+ * App name: Dollar Computers
+ * Author's Name: Mohammad S Hossain
  * Student ID: 300763479
+ * App Creation Date: 02 August, 2019
  * Description: This is the Order form
  */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
@@ -22,9 +24,9 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         }
 
         /// <summary>
-        /// Constant that represents the percentage of Sales Tax
+        /// This is the Constant that represents the percentage of Sales Tax
         /// </summary>
-        const decimal _SALES_TAX = 0.13m;
+        const decimal _SALES_TAX = 0.13M;
         
         /// <summary>
         ///  This is the shared event handler for the CancelButton and ExitToolStripMenuItem click event
@@ -50,7 +52,7 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// </summary>
         public void PopulateOrderInformation()
         {
-            //Fill up fields only when a product (Computer) is selected
+            //This is to fill up fields when a product (Computer) is selected
             if (Program.product.productID != 0)
             {
                 ConditionDataLabel.Text = Program.product.condition;

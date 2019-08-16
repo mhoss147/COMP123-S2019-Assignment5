@@ -7,9 +7,11 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * Student Name: Mohammad S Hossain
+ * App name: Dollar Computers
+ * Author's Name: Mohammad S Hossain
  * Student ID: 300763479
- * Description: This is the About form
+ * App Creation Date: 02 August, 2019
+ * Description: This is the About form of program
  */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
