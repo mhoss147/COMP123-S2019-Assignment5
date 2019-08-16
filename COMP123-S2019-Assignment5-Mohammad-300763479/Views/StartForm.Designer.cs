@@ -34,21 +34,21 @@
             this.WelcomeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.WelcomeTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // StartNewOrderButton
             // 
-            this.StartNewOrderButton.BackColor = System.Drawing.Color.Bisque;
+            this.StartNewOrderButton.BackColor = System.Drawing.Color.PapayaWhip;
             this.StartNewOrderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartNewOrderButton.Location = new System.Drawing.Point(82, 210);
-            this.StartNewOrderButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StartNewOrderButton.Margin = new System.Windows.Forms.Padding(2);
             this.StartNewOrderButton.Name = "StartNewOrderButton";
             this.StartNewOrderButton.Size = new System.Drawing.Size(154, 28);
             this.StartNewOrderButton.TabIndex = 1;
@@ -58,24 +58,26 @@
             // 
             // ExitButton
             // 
+            this.ExitButton.BackColor = System.Drawing.Color.NavajoWhite;
             this.ExitButton.Location = new System.Drawing.Point(82, 297);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(1);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(154, 28);
             this.ExitButton.TabIndex = 2;
             this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // OpenSavedOrderButton
             // 
+            this.OpenSavedOrderButton.BackColor = System.Drawing.Color.Khaki;
             this.OpenSavedOrderButton.Location = new System.Drawing.Point(82, 255);
             this.OpenSavedOrderButton.Margin = new System.Windows.Forms.Padding(1);
             this.OpenSavedOrderButton.Name = "OpenSavedOrderButton";
             this.OpenSavedOrderButton.Size = new System.Drawing.Size(154, 28);
             this.OpenSavedOrderButton.TabIndex = 3;
             this.OpenSavedOrderButton.Text = "Open a Saved Order";
-            this.OpenSavedOrderButton.UseVisualStyleBackColor = true;
+            this.OpenSavedOrderButton.UseVisualStyleBackColor = false;
             this.OpenSavedOrderButton.Click += new System.EventHandler(this.OpenSavedOrderButton_Click);
             // 
             // WelcomeTableLayoutPanel
@@ -115,16 +117,6 @@
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::COMP123_S2019_Assignment5_Mohammad_300763479.Properties.Resources.favicon;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(71, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::COMP123_S2019_Assignment5_Mohammad_300763479.Properties.Resources.DollarComputer;
@@ -134,6 +126,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::COMP123_S2019_Assignment5_Mohammad_300763479.Properties.Resources.favicon;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(71, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
             // 
             // StartForm
             // 
@@ -154,8 +156,8 @@
             this.WelcomeTableLayoutPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

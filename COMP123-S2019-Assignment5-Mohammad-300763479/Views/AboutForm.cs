@@ -6,7 +6,11 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Student Name: Mohammad S Hossain
+ * Student ID: 300763479
+ * Description: This is the About form
+ */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
     public partial class AboutForm : Form

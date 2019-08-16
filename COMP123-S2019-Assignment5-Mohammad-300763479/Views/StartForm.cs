@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Student Name: Mohammad S Hossain
+ * Student ID: 300763479
+ * Description: This is the program Start form
+ */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
     public partial class StartForm : Form
@@ -33,9 +37,9 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// <param name="e"></param>
         private void OpenSavedOrderButton_Click(object sender, EventArgs e)
         {
-            var _productInfoForm = Program.Forms[FormName.PRODUCT_INFO_FORM] as ProductInfoForm;
-            _productInfoForm.Show();
-            _productInfoForm.OpenFileDialog();
+            var productInfoForm = Program.Forms[FormName.PRODUCT_INFO_FORM] as ProductInfoForm;
+            productInfoForm.Show();
+            productInfoForm.OpenFileDialog();
             this.Hide();
         }
         /// <summary>
@@ -44,15 +48,6 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ExitButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        /// <summary>
-        /// This is the event handler for the StarForm closing event
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }

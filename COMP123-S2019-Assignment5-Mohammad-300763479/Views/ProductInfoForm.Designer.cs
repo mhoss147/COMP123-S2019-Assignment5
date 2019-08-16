@@ -29,15 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductInfoForm));
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.SelectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GPUTypeDataLabel = new System.Windows.Forms.Label();
             this.ProductIdTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.CostDataLabel = new System.Windows.Forms.Label();
             this.CostLabel = new System.Windows.Forms.Label();
@@ -45,25 +37,6 @@
             this.ConditionDataLabel = new System.Windows.Forms.Label();
             this.ProductIDDataLabel = new System.Windows.Forms.Label();
             this.ConditionLabel = new System.Windows.Forms.Label();
-            this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.ProductInfo1TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.OSDataLabel = new System.Windows.Forms.Label();
-            this.OSLabel = new System.Windows.Forms.Label();
-            this.PlataformDataLabel = new System.Windows.Forms.Label();
-            this.PlataformLabel = new System.Windows.Forms.Label();
-            this.ProductInfo2TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.ModelDataLabel = new System.Windows.Forms.Label();
-            this.ManufacturerLabel = new System.Windows.Forms.Label();
-            this.ManufacturerDataLabel = new System.Windows.Forms.Label();
-            this.ModelLabel = new System.Windows.Forms.Label();
-            this.TechSpecsGroupBox = new System.Windows.Forms.GroupBox();
-            this.TechSpecs2TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.GPUTypeDataLabel = new System.Windows.Forms.Label();
-            this.CPUNumberDataLabel = new System.Windows.Forms.Label();
-            this.GPUTypeLabel = new System.Windows.Forms.Label();
-            this.CPUBrandDataLabel = new System.Windows.Forms.Label();
-            this.CPUBrandLabel = new System.Windows.Forms.Label();
-            this.CPUNumberLabel = new System.Windows.Forms.Label();
             this.TechSpecs1TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.HDDDataLabel = new System.Windows.Forms.Label();
             this.MemoryLabel = new System.Windows.Forms.Label();
@@ -78,97 +51,62 @@
             this.CPUSpeedDataLabel = new System.Windows.Forms.Label();
             this.CPUSpeedLabel = new System.Windows.Forms.Label();
             this.CPUTypeLabel = new System.Windows.Forms.Label();
+            this.CPUNumberDataLabel = new System.Windows.Forms.Label();
             this.ClickNextToConfirmYourSelectionLabel = new System.Windows.Forms.Label();
+            this.SelectOrderSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.GPUTypeLabel = new System.Windows.Forms.Label();
             this.SelectAnotherProductButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.SelectOrderOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.SelectOrderSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.ProductInfoMenuStrip.SuspendLayout();
+            this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.ProductInfo1TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.OSDataLabel = new System.Windows.Forms.Label();
+            this.OSLabel = new System.Windows.Forms.Label();
+            this.PlataformDataLabel = new System.Windows.Forms.Label();
+            this.PlataformLabel = new System.Windows.Forms.Label();
+            this.ProductInfo2TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.ModelDataLabel = new System.Windows.Forms.Label();
+            this.ManufacturerLabel = new System.Windows.Forms.Label();
+            this.ManufacturerDataLabel = new System.Windows.Forms.Label();
+            this.ModelLabel = new System.Windows.Forms.Label();
+            this.TechSpecs2TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.CPUBrandDataLabel = new System.Windows.Forms.Label();
+            this.CPUBrandLabel = new System.Windows.Forms.Label();
+            this.CPUNumberLabel = new System.Windows.Forms.Label();
+            this.TechSpecsGroupBox = new System.Windows.Forms.GroupBox();
             this.ProductIdTableLayoutPanel.SuspendLayout();
+            this.TechSpecs1TableLayoutPanel.SuspendLayout();
+            this.TechSpecs3TableLayoutPanel.SuspendLayout();
+            this.ProductInfoMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.ProductInfo1TableLayoutPanel.SuspendLayout();
             this.ProductInfo2TableLayoutPanel.SuspendLayout();
-            this.TechSpecsGroupBox.SuspendLayout();
             this.TechSpecs2TableLayoutPanel.SuspendLayout();
-            this.TechSpecs1TableLayoutPanel.SuspendLayout();
-            this.TechSpecs3TableLayoutPanel.SuspendLayout();
+            this.TechSpecsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // fileToolStripMenuItem
+            // GPUTypeDataLabel
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripMenuItem,
-            this.toolStripSeparator,
-            this.saveToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.openToolStripMenuItem.Text = "&Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SelectAnotherProductToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // ProductInfoMenuStrip
-            // 
-            this.ProductInfoMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
-            this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
-            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(784, 24);
-            this.ProductInfoMenuStrip.TabIndex = 0;
-            this.ProductInfoMenuStrip.Text = "ProductInfoMenuStrip";
-            // 
-            // SelectAnotherProductToolStripMenuItem
-            // 
-            this.SelectAnotherProductToolStripMenuItem.Name = "SelectAnotherProductToolStripMenuItem";
-            this.SelectAnotherProductToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.SelectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.SelectAnotherProductToolStripMenuItem.Text = "Se&lect Another Product ";
-            this.SelectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.SelectAnotherProductButton_Click);
+            this.GPUTypeDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GPUTypeDataLabel.BackColor = System.Drawing.Color.White;
+            this.GPUTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TechSpecs2TableLayoutPanel.SetColumnSpan(this.GPUTypeDataLabel, 2);
+            this.GPUTypeDataLabel.Location = new System.Drawing.Point(542, 0);
+            this.GPUTypeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GPUTypeDataLabel.Name = "GPUTypeDataLabel";
+            this.GPUTypeDataLabel.Size = new System.Drawing.Size(216, 23);
+            this.GPUTypeDataLabel.TabIndex = 6;
+            this.GPUTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ProductIdTableLayoutPanel
             // 
@@ -186,13 +124,13 @@
             this.ProductIdTableLayoutPanel.Controls.Add(this.ConditionDataLabel, 3, 0);
             this.ProductIdTableLayoutPanel.Controls.Add(this.ProductIDDataLabel, 1, 0);
             this.ProductIdTableLayoutPanel.Controls.Add(this.ConditionLabel, 2, 0);
-            this.ProductIdTableLayoutPanel.Location = new System.Drawing.Point(11, 46);
+            this.ProductIdTableLayoutPanel.Location = new System.Drawing.Point(13, 52);
             this.ProductIdTableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ProductIdTableLayoutPanel.Name = "ProductIdTableLayoutPanel";
             this.ProductIdTableLayoutPanel.RowCount = 1;
             this.ProductIdTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.ProductIdTableLayoutPanel.Size = new System.Drawing.Size(760, 23);
-            this.ProductIdTableLayoutPanel.TabIndex = 19;
+            this.ProductIdTableLayoutPanel.TabIndex = 26;
             // 
             // CostDataLabel
             // 
@@ -268,279 +206,6 @@
             this.ConditionLabel.TabIndex = 7;
             this.ConditionLabel.Text = "Condition";
             this.ConditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ProductInfoGroupBox
-            // 
-            this.ProductInfoGroupBox.Controls.Add(this.ProductInfo1TableLayoutPanel);
-            this.ProductInfoGroupBox.Controls.Add(this.ProductInfo2TableLayoutPanel);
-            this.ProductInfoGroupBox.Location = new System.Drawing.Point(11, 116);
-            this.ProductInfoGroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ProductInfoGroupBox.Name = "ProductInfoGroupBox";
-            this.ProductInfoGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.ProductInfoGroupBox.Size = new System.Drawing.Size(767, 123);
-            this.ProductInfoGroupBox.TabIndex = 20;
-            this.ProductInfoGroupBox.TabStop = false;
-            this.ProductInfoGroupBox.Text = "Product Info";
-            // 
-            // ProductInfo1TableLayoutPanel
-            // 
-            this.ProductInfo1TableLayoutPanel.ColumnCount = 7;
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
-            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
-            this.ProductInfo1TableLayoutPanel.Controls.Add(this.OSDataLabel, 3, 0);
-            this.ProductInfo1TableLayoutPanel.Controls.Add(this.OSLabel, 2, 0);
-            this.ProductInfo1TableLayoutPanel.Controls.Add(this.PlataformDataLabel, 1, 0);
-            this.ProductInfo1TableLayoutPanel.Controls.Add(this.PlataformLabel, 0, 0);
-            this.ProductInfo1TableLayoutPanel.Location = new System.Drawing.Point(4, 32);
-            this.ProductInfo1TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.ProductInfo1TableLayoutPanel.Name = "ProductInfo1TableLayoutPanel";
-            this.ProductInfo1TableLayoutPanel.RowCount = 1;
-            this.ProductInfo1TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ProductInfo1TableLayoutPanel.Size = new System.Drawing.Size(760, 23);
-            this.ProductInfo1TableLayoutPanel.TabIndex = 16;
-            // 
-            // OSDataLabel
-            // 
-            this.OSDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.OSDataLabel.BackColor = System.Drawing.Color.White;
-            this.OSDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProductInfo1TableLayoutPanel.SetColumnSpan(this.OSDataLabel, 4);
-            this.OSDataLabel.Location = new System.Drawing.Point(326, 0);
-            this.OSDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.OSDataLabel.Name = "OSDataLabel";
-            this.OSDataLabel.Size = new System.Drawing.Size(432, 23);
-            this.OSDataLabel.TabIndex = 6;
-            this.OSDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // OSLabel
-            // 
-            this.OSLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.OSLabel.Location = new System.Drawing.Point(218, 3);
-            this.OSLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.OSLabel.Name = "OSLabel";
-            this.OSLabel.Size = new System.Drawing.Size(104, 16);
-            this.OSLabel.TabIndex = 1;
-            this.OSLabel.Text = "OS";
-            this.OSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // PlataformDataLabel
-            // 
-            this.PlataformDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlataformDataLabel.BackColor = System.Drawing.Color.White;
-            this.PlataformDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PlataformDataLabel.Location = new System.Drawing.Point(110, 0);
-            this.PlataformDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PlataformDataLabel.Name = "PlataformDataLabel";
-            this.PlataformDataLabel.Size = new System.Drawing.Size(104, 23);
-            this.PlataformDataLabel.TabIndex = 6;
-            this.PlataformDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // PlataformLabel
-            // 
-            this.PlataformLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PlataformLabel.Location = new System.Drawing.Point(2, 3);
-            this.PlataformLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PlataformLabel.Name = "PlataformLabel";
-            this.PlataformLabel.Size = new System.Drawing.Size(104, 16);
-            this.PlataformLabel.TabIndex = 0;
-            this.PlataformLabel.Text = "Plataform";
-            this.PlataformLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ProductInfo2TableLayoutPanel
-            // 
-            this.ProductInfo2TableLayoutPanel.ColumnCount = 7;
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
-            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
-            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ModelDataLabel, 3, 0);
-            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ManufacturerLabel, 0, 0);
-            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ManufacturerDataLabel, 1, 0);
-            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ModelLabel, 2, 0);
-            this.ProductInfo2TableLayoutPanel.Location = new System.Drawing.Point(4, 77);
-            this.ProductInfo2TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.ProductInfo2TableLayoutPanel.Name = "ProductInfo2TableLayoutPanel";
-            this.ProductInfo2TableLayoutPanel.RowCount = 1;
-            this.ProductInfo2TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ProductInfo2TableLayoutPanel.Size = new System.Drawing.Size(760, 23);
-            this.ProductInfo2TableLayoutPanel.TabIndex = 15;
-            // 
-            // ModelDataLabel
-            // 
-            this.ModelDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ModelDataLabel.BackColor = System.Drawing.Color.White;
-            this.ModelDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProductInfo2TableLayoutPanel.SetColumnSpan(this.ModelDataLabel, 4);
-            this.ModelDataLabel.Location = new System.Drawing.Point(326, 0);
-            this.ModelDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ModelDataLabel.Name = "ModelDataLabel";
-            this.ModelDataLabel.Size = new System.Drawing.Size(432, 23);
-            this.ModelDataLabel.TabIndex = 6;
-            this.ModelDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ManufacturerLabel
-            // 
-            this.ManufacturerLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.ManufacturerLabel.Location = new System.Drawing.Point(2, 3);
-            this.ManufacturerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ManufacturerLabel.Name = "ManufacturerLabel";
-            this.ManufacturerLabel.Size = new System.Drawing.Size(104, 16);
-            this.ManufacturerLabel.TabIndex = 0;
-            this.ManufacturerLabel.Text = "Manufacturer";
-            this.ManufacturerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ManufacturerDataLabel
-            // 
-            this.ManufacturerDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ManufacturerDataLabel.BackColor = System.Drawing.Color.White;
-            this.ManufacturerDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ManufacturerDataLabel.Location = new System.Drawing.Point(110, 0);
-            this.ManufacturerDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ManufacturerDataLabel.Name = "ManufacturerDataLabel";
-            this.ManufacturerDataLabel.Size = new System.Drawing.Size(104, 23);
-            this.ManufacturerDataLabel.TabIndex = 6;
-            this.ManufacturerDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ModelLabel
-            // 
-            this.ModelLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.ModelLabel.Location = new System.Drawing.Point(218, 3);
-            this.ModelLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ModelLabel.Name = "ModelLabel";
-            this.ModelLabel.Size = new System.Drawing.Size(104, 16);
-            this.ModelLabel.TabIndex = 1;
-            this.ModelLabel.Text = "Model";
-            this.ModelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TechSpecsGroupBox
-            // 
-            this.TechSpecsGroupBox.Controls.Add(this.TechSpecs2TableLayoutPanel);
-            this.TechSpecsGroupBox.Controls.Add(this.TechSpecs1TableLayoutPanel);
-            this.TechSpecsGroupBox.Controls.Add(this.TechSpecs3TableLayoutPanel);
-            this.TechSpecsGroupBox.Location = new System.Drawing.Point(11, 263);
-            this.TechSpecsGroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.TechSpecsGroupBox.Name = "TechSpecsGroupBox";
-            this.TechSpecsGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.TechSpecsGroupBox.Size = new System.Drawing.Size(769, 167);
-            this.TechSpecsGroupBox.TabIndex = 21;
-            this.TechSpecsGroupBox.TabStop = false;
-            this.TechSpecsGroupBox.Text = "Tech Specs";
-            // 
-            // TechSpecs2TableLayoutPanel
-            // 
-            this.TechSpecs2TableLayoutPanel.ColumnCount = 7;
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
-            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
-            this.TechSpecs2TableLayoutPanel.Controls.Add(this.GPUTypeDataLabel, 5, 0);
-            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUNumberDataLabel, 3, 0);
-            this.TechSpecs2TableLayoutPanel.Controls.Add(this.GPUTypeLabel, 4, 0);
-            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUBrandDataLabel, 1, 0);
-            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUBrandLabel, 0, 0);
-            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUNumberLabel, 2, 0);
-            this.TechSpecs2TableLayoutPanel.Location = new System.Drawing.Point(4, 75);
-            this.TechSpecs2TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.TechSpecs2TableLayoutPanel.Name = "TechSpecs2TableLayoutPanel";
-            this.TechSpecs2TableLayoutPanel.RowCount = 1;
-            this.TechSpecs2TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TechSpecs2TableLayoutPanel.Size = new System.Drawing.Size(760, 23);
-            this.TechSpecs2TableLayoutPanel.TabIndex = 19;
-            // 
-            // GPUTypeDataLabel
-            // 
-            this.GPUTypeDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GPUTypeDataLabel.BackColor = System.Drawing.Color.White;
-            this.GPUTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TechSpecs2TableLayoutPanel.SetColumnSpan(this.GPUTypeDataLabel, 2);
-            this.GPUTypeDataLabel.Location = new System.Drawing.Point(542, 0);
-            this.GPUTypeDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.GPUTypeDataLabel.Name = "GPUTypeDataLabel";
-            this.GPUTypeDataLabel.Size = new System.Drawing.Size(216, 23);
-            this.GPUTypeDataLabel.TabIndex = 6;
-            this.GPUTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // CPUNumberDataLabel
-            // 
-            this.CPUNumberDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CPUNumberDataLabel.BackColor = System.Drawing.Color.White;
-            this.CPUNumberDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CPUNumberDataLabel.Location = new System.Drawing.Point(326, 0);
-            this.CPUNumberDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CPUNumberDataLabel.Name = "CPUNumberDataLabel";
-            this.CPUNumberDataLabel.Size = new System.Drawing.Size(104, 23);
-            this.CPUNumberDataLabel.TabIndex = 6;
-            this.CPUNumberDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // GPUTypeLabel
-            // 
-            this.GPUTypeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.GPUTypeLabel.Location = new System.Drawing.Point(443, 3);
-            this.GPUTypeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.GPUTypeLabel.Name = "GPUTypeLabel";
-            this.GPUTypeLabel.Size = new System.Drawing.Size(95, 16);
-            this.GPUTypeLabel.TabIndex = 0;
-            this.GPUTypeLabel.Text = "GPU Type";
-            this.GPUTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CPUBrandDataLabel
-            // 
-            this.CPUBrandDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CPUBrandDataLabel.BackColor = System.Drawing.Color.White;
-            this.CPUBrandDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CPUBrandDataLabel.Location = new System.Drawing.Point(110, 0);
-            this.CPUBrandDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CPUBrandDataLabel.Name = "CPUBrandDataLabel";
-            this.CPUBrandDataLabel.Size = new System.Drawing.Size(104, 23);
-            this.CPUBrandDataLabel.TabIndex = 6;
-            this.CPUBrandDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // CPUBrandLabel
-            // 
-            this.CPUBrandLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.CPUBrandLabel.Location = new System.Drawing.Point(2, 3);
-            this.CPUBrandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CPUBrandLabel.Name = "CPUBrandLabel";
-            this.CPUBrandLabel.Size = new System.Drawing.Size(104, 16);
-            this.CPUBrandLabel.TabIndex = 0;
-            this.CPUBrandLabel.Text = "CPU Brand";
-            this.CPUBrandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CPUNumberLabel
-            // 
-            this.CPUNumberLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.CPUNumberLabel.Location = new System.Drawing.Point(219, 2);
-            this.CPUNumberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CPUNumberLabel.Name = "CPUNumberLabel";
-            this.CPUNumberLabel.Size = new System.Drawing.Size(103, 18);
-            this.CPUNumberLabel.TabIndex = 0;
-            this.CPUNumberLabel.Text = "CPU Number";
-            this.CPUNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TechSpecs1TableLayoutPanel
             // 
@@ -742,79 +407,404 @@
             this.CPUTypeLabel.Text = "CPU Type";
             this.CPUTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // CPUNumberDataLabel
+            // 
+            this.CPUNumberDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CPUNumberDataLabel.BackColor = System.Drawing.Color.White;
+            this.CPUNumberDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPUNumberDataLabel.Location = new System.Drawing.Point(326, 0);
+            this.CPUNumberDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CPUNumberDataLabel.Name = "CPUNumberDataLabel";
+            this.CPUNumberDataLabel.Size = new System.Drawing.Size(104, 23);
+            this.CPUNumberDataLabel.TabIndex = 6;
+            this.CPUNumberDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // ClickNextToConfirmYourSelectionLabel
             // 
-            this.ClickNextToConfirmYourSelectionLabel.Location = new System.Drawing.Point(7, 516);
+            this.ClickNextToConfirmYourSelectionLabel.Location = new System.Drawing.Point(10, 535);
             this.ClickNextToConfirmYourSelectionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ClickNextToConfirmYourSelectionLabel.Name = "ClickNextToConfirmYourSelectionLabel";
-            this.ClickNextToConfirmYourSelectionLabel.Size = new System.Drawing.Size(273, 25);
-            this.ClickNextToConfirmYourSelectionLabel.TabIndex = 22;
+            this.ClickNextToConfirmYourSelectionLabel.Size = new System.Drawing.Size(343, 16);
+            this.ClickNextToConfirmYourSelectionLabel.TabIndex = 25;
             this.ClickNextToConfirmYourSelectionLabel.Text = "Click Next do Confirm Your Selection";
             this.ClickNextToConfirmYourSelectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // GPUTypeLabel
+            // 
+            this.GPUTypeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.GPUTypeLabel.Location = new System.Drawing.Point(443, 3);
+            this.GPUTypeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GPUTypeLabel.Name = "GPUTypeLabel";
+            this.GPUTypeLabel.Size = new System.Drawing.Size(95, 16);
+            this.GPUTypeLabel.TabIndex = 0;
+            this.GPUTypeLabel.Text = "GPU Type";
+            this.GPUTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // SelectAnotherProductButton
             // 
-            this.SelectAnotherProductButton.Location = new System.Drawing.Point(342, 516);
+            this.SelectAnotherProductButton.Location = new System.Drawing.Point(441, 531);
             this.SelectAnotherProductButton.Margin = new System.Windows.Forms.Padding(2);
             this.SelectAnotherProductButton.Name = "SelectAnotherProductButton";
             this.SelectAnotherProductButton.Size = new System.Drawing.Size(175, 25);
-            this.SelectAnotherProductButton.TabIndex = 23;
+            this.SelectAnotherProductButton.TabIndex = 19;
             this.SelectAnotherProductButton.Text = "Select Another Product";
             this.SelectAnotherProductButton.UseVisualStyleBackColor = true;
             this.SelectAnotherProductButton.Click += new System.EventHandler(this.SelectAnotherProductButton_Click);
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(557, 516);
+            this.CancelButton.Location = new System.Drawing.Point(634, 531);
             this.CancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(70, 25);
-            this.CancelButton.TabIndex = 24;
+            this.CancelButton.TabIndex = 20;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(689, 516);
+            this.NextButton.Location = new System.Drawing.Point(718, 531);
             this.NextButton.Margin = new System.Windows.Forms.Padding(2);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(55, 25);
-            this.NextButton.TabIndex = 25;
+            this.NextButton.TabIndex = 21;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // ProductInfoMenuStrip
+            // 
+            this.ProductInfoMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem1,
+            this.editToolStripMenuItem});
+            this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
+            this.ProductInfoMenuStrip.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(784, 24);
+            this.ProductInfoMenuStrip.TabIndex = 22;
+            this.ProductInfoMenuStrip.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem1
+            // 
+            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem1.Text = "&File";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SelectAnotherProductToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 22);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // SelectAnotherProductToolStripMenuItem
+            // 
+            this.SelectAnotherProductToolStripMenuItem.Name = "SelectAnotherProductToolStripMenuItem";
+            this.SelectAnotherProductToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
+            this.SelectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.SelectAnotherProductToolStripMenuItem.Text = "Se&lect Another Product";
+            this.SelectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.SelectAnotherProductButton_Click);
+            // 
+            // ProductInfoGroupBox
+            // 
+            this.ProductInfoGroupBox.Controls.Add(this.ProductInfo1TableLayoutPanel);
+            this.ProductInfoGroupBox.Controls.Add(this.ProductInfo2TableLayoutPanel);
+            this.ProductInfoGroupBox.Location = new System.Drawing.Point(9, 98);
+            this.ProductInfoGroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ProductInfoGroupBox.Name = "ProductInfoGroupBox";
+            this.ProductInfoGroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.ProductInfoGroupBox.Size = new System.Drawing.Size(767, 123);
+            this.ProductInfoGroupBox.TabIndex = 23;
+            this.ProductInfoGroupBox.TabStop = false;
+            this.ProductInfoGroupBox.Text = "Product Info";
+            // 
+            // ProductInfo1TableLayoutPanel
+            // 
+            this.ProductInfo1TableLayoutPanel.ColumnCount = 7;
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
+            this.ProductInfo1TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
+            this.ProductInfo1TableLayoutPanel.Controls.Add(this.OSDataLabel, 3, 0);
+            this.ProductInfo1TableLayoutPanel.Controls.Add(this.OSLabel, 2, 0);
+            this.ProductInfo1TableLayoutPanel.Controls.Add(this.PlataformDataLabel, 1, 0);
+            this.ProductInfo1TableLayoutPanel.Controls.Add(this.PlataformLabel, 0, 0);
+            this.ProductInfo1TableLayoutPanel.Location = new System.Drawing.Point(4, 32);
+            this.ProductInfo1TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ProductInfo1TableLayoutPanel.Name = "ProductInfo1TableLayoutPanel";
+            this.ProductInfo1TableLayoutPanel.RowCount = 1;
+            this.ProductInfo1TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ProductInfo1TableLayoutPanel.Size = new System.Drawing.Size(760, 23);
+            this.ProductInfo1TableLayoutPanel.TabIndex = 16;
+            // 
+            // OSDataLabel
+            // 
+            this.OSDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OSDataLabel.BackColor = System.Drawing.Color.White;
+            this.OSDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ProductInfo1TableLayoutPanel.SetColumnSpan(this.OSDataLabel, 4);
+            this.OSDataLabel.Location = new System.Drawing.Point(326, 0);
+            this.OSDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OSDataLabel.Name = "OSDataLabel";
+            this.OSDataLabel.Size = new System.Drawing.Size(432, 23);
+            this.OSDataLabel.TabIndex = 6;
+            this.OSDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // OSLabel
+            // 
+            this.OSLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.OSLabel.Location = new System.Drawing.Point(218, 3);
+            this.OSLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OSLabel.Name = "OSLabel";
+            this.OSLabel.Size = new System.Drawing.Size(104, 16);
+            this.OSLabel.TabIndex = 1;
+            this.OSLabel.Text = "OS";
+            this.OSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // PlataformDataLabel
+            // 
+            this.PlataformDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PlataformDataLabel.BackColor = System.Drawing.Color.White;
+            this.PlataformDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PlataformDataLabel.Location = new System.Drawing.Point(110, 0);
+            this.PlataformDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PlataformDataLabel.Name = "PlataformDataLabel";
+            this.PlataformDataLabel.Size = new System.Drawing.Size(104, 23);
+            this.PlataformDataLabel.TabIndex = 6;
+            this.PlataformDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PlataformLabel
+            // 
+            this.PlataformLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PlataformLabel.Location = new System.Drawing.Point(2, 3);
+            this.PlataformLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PlataformLabel.Name = "PlataformLabel";
+            this.PlataformLabel.Size = new System.Drawing.Size(104, 16);
+            this.PlataformLabel.TabIndex = 0;
+            this.PlataformLabel.Text = "Plataform";
+            this.PlataformLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ProductInfo2TableLayoutPanel
+            // 
+            this.ProductInfo2TableLayoutPanel.ColumnCount = 7;
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
+            this.ProductInfo2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
+            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ModelDataLabel, 3, 0);
+            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ManufacturerLabel, 0, 0);
+            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ManufacturerDataLabel, 1, 0);
+            this.ProductInfo2TableLayoutPanel.Controls.Add(this.ModelLabel, 2, 0);
+            this.ProductInfo2TableLayoutPanel.Location = new System.Drawing.Point(4, 77);
+            this.ProductInfo2TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ProductInfo2TableLayoutPanel.Name = "ProductInfo2TableLayoutPanel";
+            this.ProductInfo2TableLayoutPanel.RowCount = 1;
+            this.ProductInfo2TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ProductInfo2TableLayoutPanel.Size = new System.Drawing.Size(760, 23);
+            this.ProductInfo2TableLayoutPanel.TabIndex = 15;
+            // 
+            // ModelDataLabel
+            // 
+            this.ModelDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ModelDataLabel.BackColor = System.Drawing.Color.White;
+            this.ModelDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ProductInfo2TableLayoutPanel.SetColumnSpan(this.ModelDataLabel, 4);
+            this.ModelDataLabel.Location = new System.Drawing.Point(326, 0);
+            this.ModelDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ModelDataLabel.Name = "ModelDataLabel";
+            this.ModelDataLabel.Size = new System.Drawing.Size(432, 23);
+            this.ModelDataLabel.TabIndex = 6;
+            this.ModelDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ManufacturerLabel
+            // 
+            this.ManufacturerLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ManufacturerLabel.Location = new System.Drawing.Point(2, 3);
+            this.ManufacturerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ManufacturerLabel.Name = "ManufacturerLabel";
+            this.ManufacturerLabel.Size = new System.Drawing.Size(104, 16);
+            this.ManufacturerLabel.TabIndex = 0;
+            this.ManufacturerLabel.Text = "Manufacturer";
+            this.ManufacturerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ManufacturerDataLabel
+            // 
+            this.ManufacturerDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ManufacturerDataLabel.BackColor = System.Drawing.Color.White;
+            this.ManufacturerDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ManufacturerDataLabel.Location = new System.Drawing.Point(110, 0);
+            this.ManufacturerDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ManufacturerDataLabel.Name = "ManufacturerDataLabel";
+            this.ManufacturerDataLabel.Size = new System.Drawing.Size(104, 23);
+            this.ManufacturerDataLabel.TabIndex = 6;
+            this.ManufacturerDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ModelLabel
+            // 
+            this.ModelLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ModelLabel.Location = new System.Drawing.Point(218, 3);
+            this.ModelLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ModelLabel.Name = "ModelLabel";
+            this.ModelLabel.Size = new System.Drawing.Size(104, 16);
+            this.ModelLabel.TabIndex = 1;
+            this.ModelLabel.Text = "Model";
+            this.ModelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TechSpecs2TableLayoutPanel
+            // 
+            this.TechSpecs2TableLayoutPanel.ColumnCount = 7;
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28702F));
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
+            this.TechSpecs2TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28245F));
+            this.TechSpecs2TableLayoutPanel.Controls.Add(this.GPUTypeDataLabel, 5, 0);
+            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUNumberDataLabel, 3, 0);
+            this.TechSpecs2TableLayoutPanel.Controls.Add(this.GPUTypeLabel, 4, 0);
+            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUBrandDataLabel, 1, 0);
+            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUBrandLabel, 0, 0);
+            this.TechSpecs2TableLayoutPanel.Controls.Add(this.CPUNumberLabel, 2, 0);
+            this.TechSpecs2TableLayoutPanel.Location = new System.Drawing.Point(4, 75);
+            this.TechSpecs2TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.TechSpecs2TableLayoutPanel.Name = "TechSpecs2TableLayoutPanel";
+            this.TechSpecs2TableLayoutPanel.RowCount = 1;
+            this.TechSpecs2TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TechSpecs2TableLayoutPanel.Size = new System.Drawing.Size(760, 23);
+            this.TechSpecs2TableLayoutPanel.TabIndex = 19;
+            // 
+            // CPUBrandDataLabel
+            // 
+            this.CPUBrandDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CPUBrandDataLabel.BackColor = System.Drawing.Color.White;
+            this.CPUBrandDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPUBrandDataLabel.Location = new System.Drawing.Point(110, 0);
+            this.CPUBrandDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CPUBrandDataLabel.Name = "CPUBrandDataLabel";
+            this.CPUBrandDataLabel.Size = new System.Drawing.Size(104, 23);
+            this.CPUBrandDataLabel.TabIndex = 6;
+            this.CPUBrandDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUBrandLabel
+            // 
+            this.CPUBrandLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.CPUBrandLabel.Location = new System.Drawing.Point(2, 3);
+            this.CPUBrandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CPUBrandLabel.Name = "CPUBrandLabel";
+            this.CPUBrandLabel.Size = new System.Drawing.Size(104, 16);
+            this.CPUBrandLabel.TabIndex = 0;
+            this.CPUBrandLabel.Text = "CPU Brand";
+            this.CPUBrandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CPUNumberLabel
+            // 
+            this.CPUNumberLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.CPUNumberLabel.Location = new System.Drawing.Point(219, 2);
+            this.CPUNumberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CPUNumberLabel.Name = "CPUNumberLabel";
+            this.CPUNumberLabel.Size = new System.Drawing.Size(103, 18);
+            this.CPUNumberLabel.TabIndex = 0;
+            this.CPUNumberLabel.Text = "CPU Number";
+            this.CPUNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TechSpecsGroupBox
+            // 
+            this.TechSpecsGroupBox.Controls.Add(this.TechSpecs2TableLayoutPanel);
+            this.TechSpecsGroupBox.Controls.Add(this.TechSpecs1TableLayoutPanel);
+            this.TechSpecsGroupBox.Controls.Add(this.TechSpecs3TableLayoutPanel);
+            this.TechSpecsGroupBox.Location = new System.Drawing.Point(9, 250);
+            this.TechSpecsGroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TechSpecsGroupBox.Name = "TechSpecsGroupBox";
+            this.TechSpecsGroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.TechSpecsGroupBox.Size = new System.Drawing.Size(769, 167);
+            this.TechSpecsGroupBox.TabIndex = 24;
+            this.TechSpecsGroupBox.TabStop = false;
+            this.TechSpecsGroupBox.Text = "Tech Specs";
             // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.NextButton);
-            this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.SelectAnotherProductButton);
-            this.Controls.Add(this.ClickNextToConfirmYourSelectionLabel);
-            this.Controls.Add(this.TechSpecsGroupBox);
-            this.Controls.Add(this.ProductInfoGroupBox);
+            this.ControlBox = false;
             this.Controls.Add(this.ProductIdTableLayoutPanel);
+            this.Controls.Add(this.ClickNextToConfirmYourSelectionLabel);
+            this.Controls.Add(this.SelectAnotherProductButton);
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.ProductInfoMenuStrip);
+            this.Controls.Add(this.ProductInfoGroupBox);
+            this.Controls.Add(this.TechSpecsGroupBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.ProductInfoMenuStrip;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Product Information";
-            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
+            this.Text = "Product Info";
+            this.Load += new System.EventHandler(this.ProductInfoForm_Activated);
+            this.ProductIdTableLayoutPanel.ResumeLayout(false);
+            this.TechSpecs1TableLayoutPanel.ResumeLayout(false);
+            this.TechSpecs3TableLayoutPanel.ResumeLayout(false);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
-            this.ProductIdTableLayoutPanel.ResumeLayout(false);
             this.ProductInfoGroupBox.ResumeLayout(false);
             this.ProductInfo1TableLayoutPanel.ResumeLayout(false);
             this.ProductInfo2TableLayoutPanel.ResumeLayout(false);
-            this.TechSpecsGroupBox.ResumeLayout(false);
             this.TechSpecs2TableLayoutPanel.ResumeLayout(false);
-            this.TechSpecs1TableLayoutPanel.ResumeLayout(false);
-            this.TechSpecs3TableLayoutPanel.ResumeLayout(false);
+            this.TechSpecsGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -822,15 +812,13 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem SelectAnotherProductToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip ProductInfoMenuStrip;
+        private System.Windows.Forms.Label GPUTypeDataLabel;
+        private System.Windows.Forms.TableLayoutPanel TechSpecs2TableLayoutPanel;
+        private System.Windows.Forms.Label CPUNumberDataLabel;
+        private System.Windows.Forms.Label GPUTypeLabel;
+        private System.Windows.Forms.Label CPUBrandDataLabel;
+        private System.Windows.Forms.Label CPUBrandLabel;
+        private System.Windows.Forms.Label CPUNumberLabel;
         private System.Windows.Forms.TableLayoutPanel ProductIdTableLayoutPanel;
         private System.Windows.Forms.Label CostDataLabel;
         private System.Windows.Forms.Label CostLabel;
@@ -838,25 +826,6 @@
         private System.Windows.Forms.Label ConditionDataLabel;
         private System.Windows.Forms.Label ProductIDDataLabel;
         private System.Windows.Forms.Label ConditionLabel;
-        private System.Windows.Forms.GroupBox ProductInfoGroupBox;
-        private System.Windows.Forms.TableLayoutPanel ProductInfo1TableLayoutPanel;
-        private System.Windows.Forms.Label OSDataLabel;
-        private System.Windows.Forms.Label OSLabel;
-        private System.Windows.Forms.Label PlataformDataLabel;
-        private System.Windows.Forms.Label PlataformLabel;
-        private System.Windows.Forms.TableLayoutPanel ProductInfo2TableLayoutPanel;
-        private System.Windows.Forms.Label ModelDataLabel;
-        private System.Windows.Forms.Label ManufacturerLabel;
-        private System.Windows.Forms.Label ManufacturerDataLabel;
-        private System.Windows.Forms.Label ModelLabel;
-        private System.Windows.Forms.GroupBox TechSpecsGroupBox;
-        private System.Windows.Forms.TableLayoutPanel TechSpecs2TableLayoutPanel;
-        private System.Windows.Forms.Label GPUTypeDataLabel;
-        private System.Windows.Forms.Label CPUNumberDataLabel;
-        private System.Windows.Forms.Label GPUTypeLabel;
-        private System.Windows.Forms.Label CPUBrandDataLabel;
-        private System.Windows.Forms.Label CPUBrandLabel;
-        private System.Windows.Forms.Label CPUNumberLabel;
         private System.Windows.Forms.TableLayoutPanel TechSpecs1TableLayoutPanel;
         private System.Windows.Forms.Label HDDDataLabel;
         private System.Windows.Forms.Label MemoryLabel;
@@ -872,10 +841,29 @@
         private System.Windows.Forms.Label CPUSpeedLabel;
         private System.Windows.Forms.Label CPUTypeLabel;
         private System.Windows.Forms.Label ClickNextToConfirmYourSelectionLabel;
+        private System.Windows.Forms.SaveFileDialog SelectOrderSaveFileDialog;
         private System.Windows.Forms.Button SelectAnotherProductButton;
-        private System.Windows.Forms.Button CancelButton;
+        private new System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.OpenFileDialog SelectOrderOpenFileDialog;
-        private System.Windows.Forms.SaveFileDialog SelectOrderSaveFileDialog;
+        private System.Windows.Forms.MenuStrip ProductInfoMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SelectAnotherProductToolStripMenuItem;
+        private System.Windows.Forms.GroupBox ProductInfoGroupBox;
+        private System.Windows.Forms.TableLayoutPanel ProductInfo1TableLayoutPanel;
+        private System.Windows.Forms.Label OSDataLabel;
+        private System.Windows.Forms.Label OSLabel;
+        private System.Windows.Forms.Label PlataformDataLabel;
+        private System.Windows.Forms.Label PlataformLabel;
+        private System.Windows.Forms.TableLayoutPanel ProductInfo2TableLayoutPanel;
+        private System.Windows.Forms.Label ModelDataLabel;
+        private System.Windows.Forms.Label ManufacturerLabel;
+        private System.Windows.Forms.Label ManufacturerDataLabel;
+        private System.Windows.Forms.Label ModelLabel;
+        private System.Windows.Forms.GroupBox TechSpecsGroupBox;
     }
 }

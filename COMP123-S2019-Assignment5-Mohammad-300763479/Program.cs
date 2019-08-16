@@ -5,15 +5,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Student Name: Mohammad S Hossain
+ * Student ID: 300763479
+ * Description: This is the Main Program class
+ */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479
 {
     public static class Program
     {
         public static Product product;
 
-        //Using a Dictionary and an ENUM to handle Form Names
+        //Dictionary to handle Form Names
         public static Dictionary<FormName, Form> Forms;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -35,9 +40,9 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479
             //creating a product object
             product = new Product();
 
-            Application.Run(Forms[FormName.SELECT_FORM]);
+            Application.Run(Forms[FormName.SPLASH_FORM]);
         }
 
     }
-    }
 }
+

@@ -1,5 +1,4 @@
-﻿using COMP123_S2019_Assignment5_Mohammad_300763479.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,51 +8,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Student Name: Mohammad S Hossain
+ * Student ID: 300763479
+ * Description: This is the ProductInfo form
+ */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
     public partial class ProductInfoForm : Form
     {
-        public object SelectOrderOpenFileDialog { get; private set; }
-        public object SelectOrderSaveFileDialog { get; private set; }
-
         public ProductInfoForm()
         {
             InitializeComponent();
         }
         /// <summary>
-        ///  This is the event handler for ProductInfoForm load event
+        /// This is the event handler for the ProductInfoForm load event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
-            // This disable next button until product selected
+            //Disable Next button until form filled
             NextButton.Enabled = false;
         }
         /// <summary>
-        /// This is the event handler for the ProductInfoForm Activated event
+        /// This method populate ProductInfoForm with computer object info 
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ProductInfoForm_Activated(object sender, EventArgs e)
+        public void PopulateProductInformation()
         {
-            PopulateProductInfo();
-        }
-        /// <summary>
-        /// This is the event handler for the ProductInfoForm closing event
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ProductInfoForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-        /// <summary>
-        /// This method is used to populate ProductInfoForm with computer object information 
-        /// </summary>
-        private void PopulateProductInfo()
-        {
+            //Fill up fields only when a product (Computer) is selected
             if (Program.product.productID != 0)
             {
                 ProductIDDataLabel.Text = Program.product.productID.ToString();
@@ -73,30 +56,20 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                 CPUSpeedDataLabel.Text = Program.product.CPU_speed;
                 WebCamDataLabel.Text = Program.product.webcam;
 
-                // this enable Next button after a product selected
+                //Enabble Next button after form filled
                 NextButton.Enabled = true;
             }
         }
         /// <summary>
-        /// This is the shared event handler for SelectAnotherProductToolStripMenuItem and SelectAnotherProductButton click event
+        /// This is the event handler for the ProductInfoForm Activated event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SelectAnotherProductButton_Click(object sender, EventArgs e)
+        private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
-
-            Program.Forms[FormName.SELECT_FORM].Show();
-            this.Hide();
+            PopulateProductInformation();
         }
-        /// <summary>
-        /// this is the shared event handler for the exitToolStripMenuItem and CancelButton click event
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CancelButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
         /// <summary>
         /// This is the event handler for the NextButton click event
         /// </summary>
@@ -106,21 +79,41 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         {
             Program.Forms[FormName.ORDER_FORM].Show();
             this.Hide();
+            OrderForm form = Program.Forms[FormName.ORDER_FORM] as OrderForm;
+            form.PopulateOrderInformation();
         }
         /// <summary>
-        ///  this is the event handler for the OpenToolStripMenuItem click event
+        /// This is the shared event handler for the SelectAnotherProductButton and SelectAnotherProductToolStripMenuItem click event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SelectAnotherProductButton_Click(object sender, EventArgs e)
         {
-            OpenFileDialog();
-
+            Program.Forms[FormName.SELECT_FORM].Show();
+            this.Hide();
         }
         /// <summary>
-        ///  This is the method for OpenFileDialog
+        /// This is the shared event handler for the CancelButton and exitToolStripMenuItem click event
         /// </summary>
-        private void OpenFileDialog()
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        /// <summary>
+        /// This is the event handler for the OpenToolStripMenuItem click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog();
+        }
+        /// <summary>
+        /// This method opens a OpenFileDialog.
+        /// </summary>
+        public void OpenFileDialog()
         {
             //Configure the file dialog
             SelectOrderOpenFileDialog.FileName = "Product";
@@ -166,8 +159,13 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            PopulateProductInfo();
+            PopulateProductInformation();
         }
+        /// <summary>
+        /// This is the event handler for the SaveToolStripMenuItem click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Configure the file dialog
@@ -218,6 +216,15 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-       
+        /// <summary>
+        /// This is the event handler for the ProductInfoForm closing event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ProductInfoForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
+
 }

@@ -9,7 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Student Name: Mohammad S Hossain
+ * Student ID: 300763479
+ * Description: This is the Product select form
+ */
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
 {
     public partial class SelectForm : Form
@@ -18,6 +22,18 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         {
             InitializeComponent();
         }
+        
+        /// <summary>
+        /// This is the event handler for the NextButton click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormName.PRODUCT_INFO_FORM].Show();
+            this.Hide();
+        }
+       
         /// <summary>
         /// This is the event handler for the SelectForm load event
         /// </summary>
@@ -25,23 +41,29 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
         /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            using(var db = new ProductModel())
+            using (var db = new ProductModel())
             {
                 db.products.Load();
                 productBindingSource.DataSource = db.products.Local.ToBindingList();
                 db.Dispose();
             }
+            //Disable Next button until any selection made
+            NextButton.Enabled = false;
         }
+
+        /// <summary>
+        /// This is the event handler for the ProductsDataGridView Selection Changed event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductsDataGridView_SelectionChanged(object sender, EventArgs e)
         {
-            var _rowIndex = ProductDataGridView.CurrentCell.RowIndex;
-            var _currentRow = ProductDataGridView.Rows[_rowIndex];
+            //local variables 
+            var _rowIndex = ProductsDataGridView.CurrentCell.RowIndex;
+            var _currentRow = ProductsDataGridView.Rows[_rowIndex];
             var _cells = _currentRow.Cells;
 
+            //Create a computer object with information from a line selected in DataGridView
             Program.product.productID = short.Parse(_cells[(int)ProductFields.PRODUCT_ID].Value.ToString());
             Program.product.cost = decimal.Parse(_cells[(int)ProductFields.COST].Value.ToString());
             Program.product.manufacturer = _cells[(int)ProductFields.MANUFACTURER].Value.ToString();
@@ -59,30 +81,33 @@ namespace COMP123_S2019_Assignment5_Mohammad_300763479.Views
             Program.product.CPU_speed = _cells[(int)ProductFields.CPU_SPEED].Value.ToString();
             Program.product.webcam = _cells[(int)ProductFields.WEBCAM].Value.ToString();
 
-            SelectedProductTextBox.Text = Program.product.manufacturer.ToString() + " " +
-                                         Program.product.model.ToString() + " " +
-                                         ((decimal)Program.product.cost).ToString("C");
+            //Input for Selection TextBox
+            SelectedProductTextBox.Text = $"{Program.product.manufacturer} - {Program.product.model} \t Price: {Convert.ToDouble(Program.product.cost.ToString()):C2}";
 
+
+            //Enable Next button after selecion
             NextButton.Enabled = true;
+
+            ProductInfoForm form = Program.Forms[FormName.PRODUCT_INFO_FORM] as ProductInfoForm;
+            form.PopulateProductInformation();
         }
         /// <summary>
-        ///  This is the event handler for CancelButton click event
+        /// This is the event handler for the SelectForm closing event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SelectForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        /// <summary>
+        /// This is the event handler for the CancelButton click event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        /// <summary>
-        /// This is the event handler for NextButton click event
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void NextButton_Click(object sender, EventArgs e)
-        {
-            Program.Forms[FormName.PRODUCT_INFO_FORM].Show();
-            this.Hide();
         }
     }
 }

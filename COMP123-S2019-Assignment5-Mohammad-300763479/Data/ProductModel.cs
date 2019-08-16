@@ -1,3 +1,9 @@
+/*
+ * Student Name: Mohammad S Hossain
+ * Student ID: 300763479
+ * Description: This is the Product model class
+ */
+
 namespace COMP123_S2019_Assignment5_Mohammad_300763479.Data
 {
     using System;
